@@ -1,5 +1,33 @@
 [
   {
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "optional": false,
+            "field": "varname1",
+            "description": "<p>No type.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "varname2",
+            "description": "<p>With type.</p>"
+          }
+        ]
+      }
+    },
+    "type": "",
+    "url": "",
+    "version": "0.0.0",
+    "filename": "./crunchyroll-docs/main.js",
+    "group": "/Users/christopher/github/crunchyrollapi/crunchyroll-docs/main.js",
+    "groupTitle": "/Users/christopher/github/crunchyrollapi/crunchyroll-docs/main.js",
+    "name": ""
+  },
+  {
     "type": "get",
     "url": "/AllAnimeSeries/:page",
     "title": "Get list of Anime Series (Most Polulars)",
@@ -258,7 +286,7 @@
       "examples": [
         {
           "title": "Success-Response:",
-          "content": "HTTP/1.1 200 OK\n\n   {\n   \"data\": [\n     {\n       \"id\": \"es/black-clover\",\n       \"title\": \"Black Clover\",\n       \"image\": \"https://img1.ak.crunchyroll.com/i/spire2/1a39d39cbe3346cce5e44577cbb895041579741401_thumb.jpg\",\n       \"total_eps\": 125,\n       \"episodes\": [\n         {\n           \"epsId\": \"es/black-clover/episode-124-nero-reminisces-part-two-792260\",\n           \"title\": \"Episodio 124\",\n           \"description\": \"Los recuerdos de Nero y… Segunda parte)\",\n           \"previewImage\": \"https://img1.ak.crunchyroll.com/i/spire1-tmb/76a6e2ff7720d369f50df0fce21b3d1d1583229101_widestar.jpg\"\n         },\n         {\n           \"epsId\": \"es/black-clover/episode-123-nero-reminisces-part-one-792259\",\n           \"title\": \"Episodio 123\",\n           \"description\": \"Los recuerdos de Nero y… (Primera parte)\",\n           \"previewImage\": \"https://img1.ak.crunchyroll.com/i/spire2-tmb/5d63624376fc3096e1f711910b32b9461582621183_wide.jpg\"\n         },\n         //.....\n       ]\n     },\n     //.....\n   ]\n }",
+          "content": "HTTP/1.1 200 OK\n\n   {\n   \"data\": [\n     {\n       \"id\": \"black-clover\",\n       \"title\": \"Black Clover\",\n       \"image\": \"https://img1.ak.crunchyroll.com/i/spire2/1a39d39cbe3346cce5e44577cbb895041579741401_thumb.jpg\",\n       \"total_eps\": 125,\n       \"episodes\": [\n         {\n           \"epsId\": \"black-clover/episode-124-nero-reminisces-part-two-792260\",\n           \"title\": \"Episodio 124\",\n           \"description\": \"Los recuerdos de Nero y… Segunda parte)\",\n           \"previewImage\": \"https://img1.ak.crunchyroll.com/i/spire1-tmb/76a6e2ff7720d369f50df0fce21b3d1d1583229101_widestar.jpg\"\n         },\n         {\n           \"epsId\": \"black-clover/episode-123-nero-reminisces-part-one-792259\",\n           \"title\": \"Episodio 123\",\n           \"description\": \"Los recuerdos de Nero y… (Primera parte)\",\n           \"previewImage\": \"https://img1.ak.crunchyroll.com/i/spire2-tmb/5d63624376fc3096e1f711910b32b9461582621183_wide.jpg\"\n         },\n         //.....\n       ]\n     },\n     //.....\n   ]\n }",
           "type": "json"
         }
       ]
@@ -525,7 +553,7 @@
       "examples": [
         {
           "title": "Success-Response:",
-          "content": "HTTP/1.1 200 OK\n{\n  \"data\": [\n    {\n      \"id\": \"es/227-nanabun-no-nijyuuni\",\n      \"title\": \"22/7 (nanabun no nijyuuni)\",\n      \"image\": \"https://img1.ak.crunchyroll.com/i/spire3/5d59d07333b214db3e482c5eb0feef391578958040_thumb.jpg\",\n      \"total_eps\": 4,\n      \"episodes\": [\n        {\n          \"epsId\": \"es/227-nanabun-no-nijyuuni/episode-4-the-promised-flower-793661\",\n          \"title\": \"Episodio 4\",\n          \"description\": \"La flor prometida\",\n          \"previewImage\": \"https://img1.ak.crunchyroll.com/i/spire1-tmb/d048f57eb83342c748edc5a96e3333a71583156083_wide.jpg\"\n        },\n        {\n          \"epsId\": \"es/227-nanabun-no-nijyuuni/episode-3-hello-new-world-793660\",\n          \"title\": \"Episodio 3\",\n          \"description\": \"Hola a mi nuevo mundo\",\n          \"previewImage\": \"https://img1.ak.crunchyroll.com/i/spire1-tmb/ab5a9b7b1061cea4e6e24ae04a93a6c71582556451_wide.jpg\"\n        },\n        {\n          \"epsId\": \"es/227-nanabun-no-nijyuuni/episode-2-amid-the-dizziness-793659\",\n          \"title\": \"Episodio 2\",\n          \"description\": \"Entre el vértigo\",\n          \"previewImage\": \"https://img1.ak.crunchyroll.com/i/spire2-tmb/7c4d3ef8635f95d47784dbd986a86e481581940069_wide.jpg\"\n        },\n        {\n          \"epsId\": \"es/227-nanabun-no-nijyuuni/episode-1-goodbye-small-world-793658\",\n          \"title\": \"Episodio 1\",\n          \"description\": \"Adiós a mi pequeño mundo\",\n          \"previewImage\": \"https://img1.ak.crunchyroll.com/i/spire3-tmb/216f7f5f15ccaf22e70fb00ccc44c72e1581341267_wide.jpg\"\n        }\n      ]\n    },\n    //.....\n  ]\n}",
+          "content": "HTTP/1.1 200 OK\n{\n  \"data\": [\n    {\n      \"id\": \"227-nanabun-no-nijyuuni\",\n      \"title\": \"22/7 (nanabun no nijyuuni)\",\n      \"image\": \"https://img1.ak.crunchyroll.com/i/spire3/5d59d07333b214db3e482c5eb0feef391578958040_thumb.jpg\",\n      \"total_eps\": 4,\n      \"episodes\": [\n        {\n          \"epsId\": \"227-nanabun-no-nijyuuni/episode-4-the-promised-flower-793661\",\n          \"title\": \"Episodio 4\",\n          \"description\": \"La flor prometida\",\n          \"previewImage\": \"https://img1.ak.crunchyroll.com/i/spire1-tmb/d048f57eb83342c748edc5a96e3333a71583156083_wide.jpg\"\n        },\n        {\n          \"epsId\": \"227-nanabun-no-nijyuuni/episode-3-hello-new-world-793660\",\n          \"title\": \"Episodio 3\",\n          \"description\": \"Hola a mi nuevo mundo\",\n          \"previewImage\": \"https://img1.ak.crunchyroll.com/i/spire1-tmb/ab5a9b7b1061cea4e6e24ae04a93a6c71582556451_wide.jpg\"\n        },\n        {\n          \"epsId\": \"227-nanabun-no-nijyuuni/episode-2-amid-the-dizziness-793659\",\n          \"title\": \"Episodio 2\",\n          \"description\": \"Entre el vértigo\",\n          \"previewImage\": \"https://img1.ak.crunchyroll.com/i/spire2-tmb/7c4d3ef8635f95d47784dbd986a86e481581940069_wide.jpg\"\n        },\n        {\n          \"epsId\": \"227-nanabun-no-nijyuuni/episode-1-goodbye-small-world-793658\",\n          \"title\": \"Episodio 1\",\n          \"description\": \"Adiós a mi pequeño mundo\",\n          \"previewImage\": \"https://img1.ak.crunchyroll.com/i/spire3-tmb/216f7f5f15ccaf22e70fb00ccc44c72e1581341267_wide.jpg\"\n        }\n      ]\n    },\n    //.....\n  ]\n}",
           "type": "json"
         }
       ]
@@ -821,7 +849,7 @@
       "examples": [
         {
           "title": "Success-Response:",
-          "content": "HTTP/1.1 200 OK\n\n {\n   \"data\": [\n     {\n       \"id\": \"es/a-centaurs-life\",\n       \"title\": \"A Centaur's Life (Centaur no Nayami)\",\n       \"image\": \"https://img1.ak.crunchyroll.com/i/spire3/9bcd2545e77b5c6b85fb4643e50c53241498717636_small.jpg\",\n       \"total_eps\": 12,\n       \"episodes\": [\n         {\n           \"epsId\": \"es/a-centaurs-life/episode-12-we-tried-making-a-fantasy-story-in-rpg-style-fierce-fights-arm-wrestling-how-will-the-battle-of-the-heroines-end-742045\",\n           \"title\": \"Episodio 12\",\n           \"description\": \"Intentamos hacer una historia de fantasía estilo RPG\",\n           \"previewImage\": \"https://img1.ak.crunchyroll.com/i/spire4-tmb/ef4d07089107f66217654772cc6573d61506250934_wide.jpg\"\n         },\n         {\n           \"epsId\": \"es/a-centaurs-life/episode-11-there-are-as-many-names-of-flowers-as-there-are-people-but-thats-totally-a-lie-there-are-as-many-types-of-beauty-as-there-are-people-which-is-probably-true-if-used-in-a-broad-sense-742043\",\n           \"title\": \"Episodio 11\",\n           \"description\": \"Hay tantos tipos de belleza como personas, que probablemente sea cierto en cierto sentido\",\n           \"previewImage\": \"https://img1.ak.crunchyroll.com/i/spire3-tmb/33b3a67ed99d9a0061e09ef1a099fbce1505326564_wide.jpg\"\n         },\n         //.....\n       ]\n     }\n   ]\n }",
+          "content": "HTTP/1.1 200 OK\n\n {\n   \"data\": [\n     {\n       \"id\": \"a-centaurs-life\",\n       \"title\": \"A Centaur's Life (Centaur no Nayami)\",\n       \"image\": \"https://img1.ak.crunchyroll.com/i/spire3/9bcd2545e77b5c6b85fb4643e50c53241498717636_small.jpg\",\n       \"total_eps\": 12,\n       \"episodes\": [\n         {\n           \"epsId\": \"a-centaurs-life/episode-12-we-tried-making-a-fantasy-story-in-rpg-style-fierce-fights-arm-wrestling-how-will-the-battle-of-the-heroines-end-742045\",\n           \"title\": \"Episodio 12\",\n           \"description\": \"Intentamos hacer una historia de fantasía estilo RPG\",\n           \"previewImage\": \"https://img1.ak.crunchyroll.com/i/spire4-tmb/ef4d07089107f66217654772cc6573d61506250934_wide.jpg\"\n         },\n         {\n           \"epsId\": \"a-centaurs-life/episode-11-there-are-as-many-names-of-flowers-as-there-are-people-but-thats-totally-a-lie-there-are-as-many-types-of-beauty-as-there-are-people-which-is-probably-true-if-used-in-a-broad-sense-742043\",\n           \"title\": \"Episodio 11\",\n           \"description\": \"Hay tantos tipos de belleza como personas, que probablemente sea cierto en cierto sentido\",\n           \"previewImage\": \"https://img1.ak.crunchyroll.com/i/spire3-tmb/33b3a67ed99d9a0061e09ef1a099fbce1505326564_wide.jpg\"\n         },\n         //.....\n       ]\n     }\n   ]\n }",
           "type": "json"
         }
       ]
@@ -1068,7 +1096,7 @@
       "examples": [
         {
           "title": "Success-Response:",
-          "content": " HTTP/1.1 200 OK\n\n {\n   \"data\": [\n   {\n     \"id\": \"es/227-nanabun-no-nijyuuni\",\n     \"title\": \"22/7 (nanabun no nijyuuni)\",\n     \"image\": \"https://img1.ak.crunchyroll.com/i/spire3/5d59d07333b214db3e482c5eb0feef391578958040_thumb.jpg\",\n     \"total_eps\": 4,\n     \"episodes\": [\n       {\n         \"epsId\": \"es/227-nanabun-no-nijyuuni/episode-4-the-promised-flower-793661\",\n         \"title\": \"Episodio 4\",\n         \"description\": \"La flor prometida\",\n         \"previewImage\": \"https://img1.ak.crunchyroll.com/i/spire1-tmb/d048f57eb83342c748edc5a96e3333a71583156083_wide.jpg\"\n       },\n       {\n         \"epsId\": \"es/227-nanabun-no-nijyuuni/episode-3-hello-new-world-793660\",\n         \"title\": \"Episodio 3\",\n         \"description\": \"Hola a mi nuevo mundo\",\n         \"previewImage\": \"https://img1.ak.crunchyroll.com/i/spire1-tmb/ab5a9b7b1061cea4e6e24ae04a93a6c71582556451_wide.jpg\"\n       },\n       {\n         \"epsId\": \"es/227-nanabun-no-nijyuuni/episode-2-amid-the-dizziness-793659\",\n         \"title\": \"Episodio 2\",\n         \"description\": \"Entre el vértigo\",\n         \"previewImage\": \"https://img1.ak.crunchyroll.com/i/spire2-tmb/7c4d3ef8635f95d47784dbd986a86e481581940069_wide.jpg\"\n       },\n       {\n         \"epsId\": \"es/227-nanabun-no-nijyuuni/episode-1-goodbye-small-world-793658\",\n         \"title\": \"Episodio 1\",\n         \"description\": \"Adiós a mi pequeño mundo\",\n         \"previewImage\": \"https://img1.ak.crunchyroll.com/i/spire3-tmb/216f7f5f15ccaf22e70fb00ccc44c72e1581341267_wide.jpg\"\n       }\n     ]\n   }, \n   //.....\n  ]\n}",
+          "content": " HTTP/1.1 200 OK\n\n {\n   \"data\": [\n   {\n     \"id\": \"227-nanabun-no-nijyuuni\",\n     \"title\": \"22/7 (nanabun no nijyuuni)\",\n     \"image\": \"https://img1.ak.crunchyroll.com/i/spire3/5d59d07333b214db3e482c5eb0feef391578958040_thumb.jpg\",\n     \"total_eps\": 4,\n     \"episodes\": [\n       {\n         \"epsId\": \"227-nanabun-no-nijyuuni/episode-4-the-promised-flower-793661\",\n         \"title\": \"Episodio 4\",\n         \"description\": \"La flor prometida\",\n         \"previewImage\": \"https://img1.ak.crunchyroll.com/i/spire1-tmb/d048f57eb83342c748edc5a96e3333a71583156083_wide.jpg\"\n       },\n       {\n         \"epsId\": \"227-nanabun-no-nijyuuni/episode-3-hello-new-world-793660\",\n         \"title\": \"Episodio 3\",\n         \"description\": \"Hola a mi nuevo mundo\",\n         \"previewImage\": \"https://img1.ak.crunchyroll.com/i/spire1-tmb/ab5a9b7b1061cea4e6e24ae04a93a6c71582556451_wide.jpg\"\n       },\n       {\n         \"epsId\": \"227-nanabun-no-nijyuuni/episode-2-amid-the-dizziness-793659\",\n         \"title\": \"Episodio 2\",\n         \"description\": \"Entre el vértigo\",\n         \"previewImage\": \"https://img1.ak.crunchyroll.com/i/spire2-tmb/7c4d3ef8635f95d47784dbd986a86e481581940069_wide.jpg\"\n       },\n       {\n         \"epsId\": \"227-nanabun-no-nijyuuni/episode-1-goodbye-small-world-793658\",\n         \"title\": \"Episodio 1\",\n         \"description\": \"Adiós a mi pequeño mundo\",\n         \"previewImage\": \"https://img1.ak.crunchyroll.com/i/spire3-tmb/216f7f5f15ccaf22e70fb00ccc44c72e1581341267_wide.jpg\"\n       }\n     ]\n   }, \n   //.....\n  ]\n}",
           "type": "json"
         }
       ]
@@ -1372,7 +1400,7 @@
       "examples": [
         {
           "title": "Success-Response:",
-          "content": " HTTP/1.1 200 OK\n\n{\n  \"data\": [\n    {\n      \"id\": \"es/ascendance-of-a-bookworm\",\n      \"title\": \"Ascendance of a Bookworm\",\n      \"image\": \"https://img1.ak.crunchyroll.com/i/spire1/abb59102f88dba0b083e225db4421ee01569893751_thumb.jpg\",\n      \"episode\": 14,\n      \"episodes\": {\n        \"epsId\": \"es/ascendance-of-a-bookworm/episode-14-conclusions-791469\",\n        \"title\": \"Episodio 14\",\n        \"description\": \"Conclusión\",\n        \"previewImage\": \"https://img1.ak.crunchyroll.com/i/spire1-tmb/915538aac692fabe995e1c5cb85ab6981577264807_wide.jpg\"\n      }\n    }\n  ]\n}",
+          "content": " HTTP/1.1 200 OK\n\n{\n  \"data\": [\n    {\n      \"id\": \"ascendance-of-a-bookworm\",\n      \"title\": \"Ascendance of a Bookworm\",\n      \"image\": \"https://img1.ak.crunchyroll.com/i/spire1/abb59102f88dba0b083e225db4421ee01569893751_thumb.jpg\",\n      \"episode\": 14,\n      \"episodes\": {\n        \"epsId\": \"ascendance-of-a-bookworm/episode-14-conclusions-791469\",\n        \"title\": \"Episodio 14\",\n        \"description\": \"Conclusión\",\n        \"previewImage\": \"https://img1.ak.crunchyroll.com/i/spire1-tmb/915538aac692fabe995e1c5cb85ab6981577264807_wide.jpg\"\n      }\n    }\n  ]\n}",
           "type": "json"
         }
       ]
@@ -1619,7 +1647,7 @@
       "examples": [
         {
           "title": "Success-Response:",
-          "content": "HTTP/1.1 200 OK\n\n\n {\n   \"data\": [\n    {\n      \"id\": \"es/anohana-the-flower-we-saw-that-day-drama\",\n      \"title\": \"Anohana: La flor que vimos ese día\",\n      \"image\": \"https://img1.ak.crunchyroll.com/i/spire3/b328ed36104495b95c04c514b4c2b6ef1442958547_thumb.jpg\",\n      \"total_eps\": 1,\n      \"episodes\": [\n        {\n          \"epsId\": \"es/anohana-the-flower-we-saw-that-day-drama/anohana-the-flower-we-saw-that-day-drama-anohana-an-no-sabemos-el-nombre-de-la-flor-que-vimos-ese-da-685917\",\n          \"title\": \"Episodio SP\",\n          \"description\": \"Anohana: Aún no sabemos el nombre de la flor que vimos ese día\",\n          \"previewImage\": \"https://img1.ak.crunchyroll.com/i/spire4-tmb/9d81a5d7cc1d92a4ed766edc2eae9d711442876657_wide.jpg\"\n        }\n      ]\n    },\n    //.....\n  ]\n}",
+          "content": "HTTP/1.1 200 OK\n\n\n {\n   \"data\": [\n    {\n      \"id\": \"anohana-the-flower-we-saw-that-day-drama\",\n      \"title\": \"Anohana: La flor que vimos ese día\",\n      \"image\": \"https://img1.ak.crunchyroll.com/i/spire3/b328ed36104495b95c04c514b4c2b6ef1442958547_thumb.jpg\",\n      \"total_eps\": 1,\n      \"episodes\": [\n        {\n          \"epsId\": \"anohana-the-flower-we-saw-that-day-drama/anohana-the-flower-we-saw-that-day-drama-anohana-an-no-sabemos-el-nombre-de-la-flor-que-vimos-ese-da-685917\",\n          \"title\": \"Episodio SP\",\n          \"description\": \"Anohana: Aún no sabemos el nombre de la flor que vimos ese día\",\n          \"previewImage\": \"https://img1.ak.crunchyroll.com/i/spire4-tmb/9d81a5d7cc1d92a4ed766edc2eae9d711442876657_wide.jpg\"\n        }\n      ]\n    },\n    //.....\n  ]\n}",
           "type": "json"
         }
       ]
@@ -1665,7 +1693,7 @@
       "examples": [
         {
           "title": "You would have to use the 'epsId' property, that you would find it in the 'episodes' property.",
-          "content": "{\n  epsId = \"es/fairy-tail/episode-278-the-lamia-scale-thanksgiving-festival-777781\"\n  subs = \"Español\"\n}",
+          "content": "{\n  epsId = \"/fairy-tail/episode-278-the-lamia-scale-thanksgiving-festival-777781\"\n  subs = \"Español\"\n}",
           "type": "json"
         }
       ]
@@ -1946,7 +1974,7 @@
       "examples": [
         {
           "title": "Success-Response:",
-          "content": "HTTP/1.1 200 OK\n\n {\n   \"data\": [\n     {\n       \"id\": \"es/cerberus\",\n       \"title\": \"Cerberus\",\n       \"image\": \"https://img1.ak.crunchyroll.com/i/spire3/0d3a3b9f3a98c68aee053c0bd4bd209b1459791495_thumb.jpg\",\n       \"total_eps\": 13,\n       \"episodes\": [\n         {\n           \"epsId\": \"es/cerberus/episode-13-dragons-heart-702477\",\n           \"title\": \"Episodio 13\",\n           \"description\": \"Corazón de dragón\",\n           \"previewImage\": \"https://img1.ak.crunchyroll.com/i/spire2-tmb/6ac508cccca0b90cee5daed1c1d4c5ed1466548684_wide.jpg\"\n         },\n         //.....\n       ]\n     }\n   ]\n }",
+          "content": "HTTP/1.1 200 OK\n\n {\n   \"data\": [\n     {\n       \"id\": \"cerberus\",\n       \"title\": \"Cerberus\",\n       \"image\": \"https://img1.ak.crunchyroll.com/i/spire3/0d3a3b9f3a98c68aee053c0bd4bd209b1459791495_thumb.jpg\",\n       \"total_eps\": 13,\n       \"episodes\": [\n         {\n           \"epsId\": \"cerberus/episode-13-dragons-heart-702477\",\n           \"title\": \"Episodio 13\",\n           \"description\": \"Corazón de dragón\",\n           \"previewImage\": \"https://img1.ak.crunchyroll.com/i/spire2-tmb/6ac508cccca0b90cee5daed1c1d4c5ed1466548684_wide.jpg\"\n         },\n         //.....\n       ]\n     }\n   ]\n }",
           "type": "json"
         }
       ]
@@ -2245,7 +2273,7 @@
       "examples": [
         {
           "title": "Success-Response:",
-          "content": "HTTP/1.1 200 OK\n\n  {\n   \"data\": [\n     {\n       \"id\": \"es/one-punch-man\",\n       \"title\": \"One-Punch Man\",\n       \"image\": \"https://img1.ak.crunchyroll.com/i/spire3/bc2dbd3afc97b5f1a1ad49e1d5618a431554828663_thumb.jpg\",\n       \"description\": \"Saitama comenzó a hacer de héroe por pura afición, y tras tres años de un durísimo entrenamiento consiguió tal nivel de fuerza que puede acabar con...\",\n       \"type\": \"Series\",\n       \"episodes\": [\n         {\n           \"epsId\": \"es/one-punch-man/episode-12-the-strongest-hero-786398\",\n           \"title\": \"Episodio 12\",\n           \"description\": \"El mayor héroe\",\n           \"previewImage\": \"https://img1.ak.crunchyroll.com/i/spire2-tmb/682ceb64923048680e5d827539995a821558482389_wide.jpg\"\n         },\n         //.....\n       ]\n     },\n     //.....\n  }",
+          "content": "HTTP/1.1 200 OK\n\n  {\n   \"data\": [\n     {\n       \"id\": \"one-punch-man\",\n       \"title\": \"One-Punch Man\",\n       \"image\": \"https://img1.ak.crunchyroll.com/i/spire3/bc2dbd3afc97b5f1a1ad49e1d5618a431554828663_thumb.jpg\",\n       \"description\": \"Saitama comenzó a hacer de héroe por pura afición, y tras tres años de un durísimo entrenamiento consiguió tal nivel de fuerza que puede acabar con...\",\n       \"type\": \"Series\",\n       \"episodes\": [\n         {\n           \"epsId\": \"one-punch-man/episode-12-the-strongest-hero-786398\",\n           \"title\": \"Episodio 12\",\n           \"description\": \"El mayor héroe\",\n           \"previewImage\": \"https://img1.ak.crunchyroll.com/i/spire2-tmb/682ceb64923048680e5d827539995a821558482389_wide.jpg\"\n         },\n         //.....\n       ]\n     },\n     //.....\n  }",
           "type": "json"
         }
       ]
